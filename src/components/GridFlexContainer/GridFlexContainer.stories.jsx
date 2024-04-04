@@ -11,7 +11,7 @@ export default {
 const Template = (args) => (
   <GridFlexContainer {...args}>
     <Card
-      image="src/assets/react.svg"
+      image="images/vite.svg"
       description="Please click the button below if you would like to make a reservation."
       buttonProps={{
         type: "line",
@@ -24,7 +24,7 @@ const Template = (args) => (
       }}
     />
     <Card
-      image="src/assets/react.svg"
+      image="images/vite.svg"
       description="Please click the button below if you would like to make a reservation."
       buttonProps={{
         type: "line",
@@ -37,7 +37,7 @@ const Template = (args) => (
       }}
     />
     <Card
-      image="src/assets/react.svg"
+      image="images/vite.svg"
       description="Please click the button below if you would like to make a reservation."
       buttonProps={{
         type: "line",
@@ -50,7 +50,7 @@ const Template = (args) => (
       }}
     />
     <Card
-      image="src/assets/react.svg"
+      image="images/vite.svg"
       description="Please click the button below if you would like to make a reservation."
       buttonProps={{
         type: "line",
@@ -63,7 +63,7 @@ const Template = (args) => (
       }}
     />
     <Card
-      image="src/assets/react.svg"
+      image="images/vite.svg"
       description="Please click the button below if you would like to make a reservation."
       buttonProps={{
         type: "line",
