@@ -1,0 +1,9 @@
+.color_div {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  .toggle_switch {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

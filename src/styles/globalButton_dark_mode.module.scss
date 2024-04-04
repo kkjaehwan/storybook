@@ -1,0 +1,91 @@
+:root {
+  --button-1-text-default: var(--brand-white-100);
+  --button-1-text-hover: var(--brand-white-100);
+  --button-1-text-active: var(--brand-white-100);
+  --button-1-text-disabled: var(--brand-gray-300);
+  --button-1-text-inverse: var(--brand-white-100);
+
+  --button-1-surface-default: var(--brand-blue-200);
+  --button-1-surface-hover: var(--brand-blue-300);
+  --button-1-surface-active: var(--brand-blue-100);
+  --button-1-surface-disabled: var(--brand-gray-400);
+  --button-1-surface-inverse: var(--brand-gray-500);
+
+  --button-1-border-default: var(--brand-blue-200);
+  --button-1-border-hover: var(--brand-blue-300);
+  --button-1-border-active: var(--brand-blue-100);
+  --button-1-border-disabled: var(--brand-gray-400);
+  --button-1-border-inverse: var(--brand-gray-500);
+
+  --button-2-text-default: var(--brand-white-100);
+  --button-2-text-hover: var(--brand-white-100);
+  --button-2-text-active: var(--brand-white-300);
+  --button-2-text-disabled: var(--brand-gray-300);
+  --button-2-text-inverse: var(--brand-gray-500);
+
+  --button-2-surface-default: var(--brand-white-300);
+  --button-2-surface-hover: var(--brand-white-400);
+  --button-2-surface-active: var(--brand-white-200);
+  --button-2-surface-disabled: var(--brand-white-500);
+  --button-2-surface-inverse: var(--brand-white-500);
+
+  --button-2-border-default: var(--brand-white-300);
+  --button-2-border-hover: var(--brand-white-400);
+  --button-2-border-active: var(--brand-white-200);
+  --button-2-border-disabled: var(--brand-gray-500);
+  --button-2-border-inverse: var(--brand-gray-500);
+
+  --button-3-text-default: var(--brand-blue-200);
+  --button-3-text-hover: var(--brand-blue-300);
+  --button-3-text-active: var(--brand-blue-100);
+  --button-3-text-disabled: var(--brand-gray-300);
+  --button-3-text-inverse: var(--brand-gray-500);
+
+  --button-3-surface-default: var(--brand-white-100);
+  --button-3-surface-hover: var(--brand-white-100);
+  --button-3-surface-active: var(--brand-white-100);
+  --button-3-surface-disabled: var(--brand-white-100);
+  --button-3-surface-inverse: var(--brand-white-100);
+
+  --button-3-border-default: 2px solid var(--brand-blue-200);
+  --button-3-border-hover: 2px solid var(--brand-blue-300);
+  --button-3-border-active: 2px solid var(--brand-blue-100);
+  --button-3-border-disabled: 2px solid var(--brand-gray-300);
+  --button-3-border-inverse: 2px solid var(--brand-white-100);
+
+  --button-4-text-default: var(--brand-black-100);
+  --button-4-text-hover: var(--brand-black-100);
+  --button-4-text-active: var(--brand-black-100);
+  --button-4-text-disabled: var(--brand-black-100);
+  --button-4-text-inverse: var(--brand-black-100);
+
+  --button-4-surface-default: var(--brand-white-100);
+  --button-4-surface-hover: var(--brand-white-300);
+  --button-4-surface-active: var(--brand-white-200);
+  --button-4-surface-disabled: var(--brand-white-100);
+  --button-4-surface-inverse: var(--brand-white-100);
+
+  --button-4-border-default: var(--brand-blue-200);
+  --button-4-border-hover: var(--brand-blue-300);
+  --button-4-border-active: var(--brand-blue-100);
+  --button-4-border-disabled: var(--brand-gray-300);
+  --button-4-border-inverse: var(--brand-white-100);
+
+  --button-5-text-default: var(--brand-white-100);
+  --button-5-text-hover: var(--brand-white-100);
+  --button-5-text-active: var(--brand-white-100);
+  --button-5-text-disabled: var(--brand-white-100);
+  --button-5-text-inverse: var(--brand-white-100);
+
+  --button-5-surface-default: var(--brand-black-100);
+  --button-5-surface-hover: var(--brand-black-300);
+  --button-5-surface-active: var(--brand-black-200);
+  --button-5-surface-disabled: var(--brand-black-100);
+  --button-5-surface-inverse: var(--brand-black-100);
+
+  --button-5-border-default: var(--brand-blue-200);
+  --button-5-border-hover: var(--brand-blue-300);
+  --button-5-border-active: var(--brand-blue-100);
+  --button-5-border-disabled: var(--brand-gray-300);
+  --button-5-border-inverse: var(--brand-white-100);
+}

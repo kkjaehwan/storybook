@@ -1,0 +1,8 @@
+:root {
+  --separator-col-count: 2;
+  --separator-line-thickness: 2px;
+  --separator-gap: calc(var(--separator-line-thickness) * 2);
+  --separator-line-offset: calc(var(--separator-gap) / 2);
+  --separator-line-color: var(--border-primary);
+  --separator-child-padding: 2em;
+}

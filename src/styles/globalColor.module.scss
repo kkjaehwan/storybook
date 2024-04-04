@@ -1,0 +1,60 @@
+:root {
+  /* Brand colors */
+  --brand-blue-100: #0e347f;
+  --brand-blue-200: #0047ab;
+  --brand-blue-300: #3e7dd7;
+  --brand-blue-400: #468df1;
+  --brand-blue-500: #64abff;
+  --brand-green-100: #09901f;
+  --brand-green-200: #27ae3d;
+  --brand-green-300: #3bc259;
+  --brand-green-400: #6dd671;
+  --brand-green-500: #7aea77;
+  --brand-yellow-100: #dbb400;
+  --brand-yellow-200: #f0c900;
+  --brand-yellow-300: #ffd600;
+  --brand-yellow-400: #ffe146;
+  --brand-yellow-500: #fff175;
+  --brand-red-100: #c01c00;
+  --brand-red-200: #de3a0a;
+  --brand-red-300: #f24e1e;
+  --brand-red-400: #ff6232;
+  --brand-red-500: #ff8050;
+  --brand-gray-100: #333333;
+  --brand-gray-200: #4f4f4f;
+  --brand-gray-300: #828282;
+  --brand-gray-400: #bdbdbd;
+  --brand-gray-500: #e0e0e0;
+  --brand-black-100: #000;
+  --brand-black-200: rgba(0, 0, 0, 0.8);
+  --brand-black-300: rgba(0, 0, 0, 0.6);
+  --brand-black-400: rgba(0, 0, 0, 0.4);
+  --brand-black-500: rgba(0, 0, 0, 0.2);
+  --brand-black-600: rgba(0, 0, 0, 0);
+  --brand-white-100: #fff;
+  --brand-white-200: rgba(255, 255, 255, 0.8);
+  --brand-white-300: rgba(255, 255, 255, 0.6);
+  --brand-white-400: rgba(255, 255, 255, 0.4);
+  --brand-white-500: rgba(255, 255, 255, 0.2);
+  --brand-white-600: rgba(255, 255, 255, 0);
+
+  --brand-primary: var(--brand-blue-100);
+  --brand-secondary: var(--brand-green-100);
+}
+
+@media (prefers-color-scheme: light) {
+  @import "globalColor_light_mode.module.scss";
+}
+
+@media (prefers-color-scheme: dark) {
+  @import "globalColor_dark_mode.module.scss";
+}
+
+// data-theme doesn't work.
+// :root[data-theme="dark"] {
+//   @import "globalColor_dark_mode.module.scss";
+// }
+
+// :root[data-theme="light"] {
+//   @import "globalColor_light_mode.module.scss";
+// }

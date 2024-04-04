@@ -1,0 +1,99 @@
+@import "src/styles/globalCss.module.scss";
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(var(--separator-col-count), minmax(0, 1fr));
+  overflow: hidden;
+  gap: var(--separator-gap);
+
+  // Make Grid Items Control Absolute Pseudo Positioning
+  &[borderType="inner"] {
+    > * {
+      position: relative;
+      padding: var(--separator-child-padding);
+    }
+
+    // Pseudo Element Shared Styling
+    > *::before,
+    > *::after {
+      content: "";
+      position: absolute;
+      background-color: var(--separator-line-color);
+      z-index: 1;
+    }
+
+    // Row Borders
+    > *::after {
+      inline-size: 100vw;
+      block-size: var(--separator-line-thickness);
+      inset-inline-start: 0;
+      inset-block-start: calc(var(--separator-line-offset) * -1);
+    }
+
+    // Column Borders
+    > *::before {
+      inline-size: var(--separator-line-thickness);
+      block-size: 100vh;
+      inset-inline-start: calc(var(--separator-line-offset) * -1);
+      inset-block-start: 0;
+    }
+  }
+  &[borderType="full"] {
+    > * {
+      border: var(--separator-line-thickness) solid var(--separator-line-color);
+      padding: var(--separator-child-padding);
+    }
+  }
+
+  @media screen and (max-width: #{$breakpoint-md}) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &[borderType="inner"] {
+    > * {
+      position: relative;
+      padding: var(--separator-child-padding);
+      flex: 1 0 calc(100% / var(--separator-col-count));
+    }
+
+    > *::before {
+      content: "";
+      position: absolute;
+      background-color: var(--separator-line-color);
+      z-index: 1;
+      block-size: 100%;
+      inline-size: var(--separator-line-thickness);
+      inset-inline-start: calc(var(--separator-line-thickness) * -1);
+      inset-block-start: 0;
+    }
+
+    > *::after {
+      content: "";
+      position: absolute;
+      background-color: var(--separator-line-color);
+      z-index: 1;
+      block-size: var(--separator-line-thickness);
+      inline-size: 100%;
+      inset-inline-start: 0;
+      inset-block-start: calc(var(--separator-line-thickness) * -1);
+    }
+  }
+  &[borderType="full"] {
+    gap: var(--separator-gap);
+    > * {
+      border: var(--separator-line-thickness) solid var(--separator-line-color);
+      flex: 1 0
+        calc(
+          100% / var(--separator-col-count) -
+            (var(--separator-gap) * (var(--separator-col-count) - 1))
+        );
+      padding: var(--separator-child-padding);
+    }
+  }
+}

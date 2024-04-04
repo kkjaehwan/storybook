@@ -1,5 +1,6 @@
-import "../src/index.css";
-
+// import "../src/index.css";
+import "../src/styles/globalCss.module.scss";
+import "../src/styles/globalCss.css";
 // Registers the msw addon
 import { initialize, mswDecorator } from "msw-storybook-addon";
 

@@ -1,0 +1,36 @@
+:root {
+  --background-primary: var(--brand-white-100);
+  --background-secondary: var(--brand-gray-500);
+
+  --text-primary-default: var(--brand-black-100);
+  --text-primary-hover: var(--brand-blue-300);
+  --text-primary-active: var(--brand-blue-100);
+  --text-primary-disabled: var(--brand-gray-500);
+  --text-primary-inverse: var(--brand-gray-500);
+
+  --text-secondary-default: var(--brand-white-100);
+  --text-secondary-hover: var(--brand-white-100);
+  --text-secondary-active: var(--brand-white-300);
+  --text-secondary-disabled: var(--brand-gray-300);
+  --text-secondary-inverse: var(--brand-gray-500);
+
+  --text-tertiary: var(--brand-white-100);
+  --text-tertiary-hover: var(--brand-white-100);
+  --text-tertiary-active: var(--brand-white-300);
+  --text-tertiary-disabled: var(--brand-gray-300);
+  --text-tertiary-inverse: var(--brand-gray-500);
+
+  --surface-primary: var(--brand-blue-200);
+  --surface-secondary: var(--brand-gray-200);
+  --surface-tertiary: var(--brand-gray-300);
+  --surface-inverse: var(--brand-gray-500);
+
+  --border-primary: var(--brand-blue-200);
+  --border-secondary: var(--brand-gray-200);
+  --border-tertiary: var(--brand-gray-300);
+  --border-inverse: var(--brand-gray-500);
+
+  --surface-system-safe: var(--brand-green-200);
+  --surface-system-warn: var(--brand-yellow-200);
+  --surface-system-danger: var(--brand-red-200);
+}
