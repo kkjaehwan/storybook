@@ -44,7 +44,7 @@
     }
   }
 
-  @media screen and (max-width: #{$breakpoint-md}) {
+  @media screen and (max-width: #{$breakpoint_md}) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }

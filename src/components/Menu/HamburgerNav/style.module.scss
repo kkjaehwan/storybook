@@ -1,0 +1,33 @@
+.hamburgerNav {
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    overflow-y: scroll;
+
+    background-color: var(--brand-black-400);
+    z-index: 999;
+
+    > * {
+      background-color: var(--brand-white-100);
+    }
+
+    .button_area {
+      padding: 16px;
+      display: grid;
+      grid-template-columns: 30px auto 30px;
+
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu_area {
+      padding: 0;
+      overflow-y: scroll;
+    }
+  }
+}

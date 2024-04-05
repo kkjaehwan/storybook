@@ -7,6 +7,7 @@ const buttonPropTypes = {
   height: PropTypes.string,
   isDisabled: PropTypes.bool,
   isSelected: PropTypes.bool,
+  isHovered: PropTypes.bool,
   label: PropTypes.string,
   ariaLabel: PropTypes.string,
   iconLeft: PropTypes.node,

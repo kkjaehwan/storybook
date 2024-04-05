@@ -16,18 +16,15 @@
     height: var(--button-#{$type}-medium-height);
   }
 
-  &[isSelected="true"] {
-    background-color: var(--button-#{$type}-surface-active);
-    border: var(--button-#{$type}-border-active);
-    color: var(--button-#{$type}-text-active);
-  }
-  &:hover {
+  &:hover,
+  &[isHovered="true"] {
     background-color: var(--button-#{$type}-surface-hover);
     border: var(--button-#{$type}-border-hover);
     color: var(--button-#{$type}-text-hover);
   }
 
-  &:active {
+  &:active,
+  &[isSelected="true"] {
     background-color: var(--button-#{$type}-surface-active);
     border: var(--button-#{$type}-border-active);
     color: var(--button-#{$type}-text-active);

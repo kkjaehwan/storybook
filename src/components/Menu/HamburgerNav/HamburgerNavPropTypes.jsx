@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const navPropTypes = {
+const hamburgerNavPropTypes = {
   pages: PropTypes.arrayOf(
     PropTypes.shape({
       key: PropTypes.string.isRequired,
@@ -15,11 +15,14 @@ const navPropTypes = {
       ),
     })
   ).isRequired,
-  width: PropTypes.string,
-  height: PropTypes.string,
+  type: PropTypes.oneOf(['horizontal', 'vertical']),
+  widthHorizontal: PropTypes.string,
+  heightHorizontal: PropTypes.string,
+  widthVertical: PropTypes.string,
+  heightVertical: PropTypes.string,
   mainButtonType: PropTypes.string,
   subButtonType: PropTypes.string,
   activePageKeys: PropTypes.string,
 };
 
-export default navPropTypes;
+export default hamburgerNavPropTypes;

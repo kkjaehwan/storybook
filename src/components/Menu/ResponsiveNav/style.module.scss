@@ -1,0 +1,18 @@
+@import "src/styles/globalCss.module.scss";
+.responsiveNav {
+  .hamburgerNav {
+    display: none;
+  }
+  .horizontalNav {
+    display: block;
+  }
+
+  @media screen and (max-width: #{$breakpoint_md}) {
+    .hamburgerNav {
+      display: block;
+    }
+    .horizontalNav {
+      display: none;
+    }
+  }
+}
