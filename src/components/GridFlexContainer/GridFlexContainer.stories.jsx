@@ -4,7 +4,7 @@ import Card from "@components/Card/Card";
 
 export default {
   component: GridFlexContainer,
-  title: "GridFlexContainer",
+  title: "Design System/Layouts/GridFlexContainer",
   tags: ["autodocs"],
 };
 

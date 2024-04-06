@@ -5,7 +5,7 @@ import ResponsiveNav from "@components/Menu/ResponsiveNav/ResponsiveNav";
 
 export default {
   component: Layout,
-  title: "Layout",
+  title: "Design System/Layouts/Layout",
   tags: ["autodocs"],
 };
 

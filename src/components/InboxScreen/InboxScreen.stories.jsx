@@ -6,7 +6,7 @@ import store from "@lib/store";
 
 export default {
   component: InboxScreen,
-  title: "InboxScreen",
+  title: "Design System/TaskBox/InboxScreen",
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
   tags: ["autodocs"],
 };

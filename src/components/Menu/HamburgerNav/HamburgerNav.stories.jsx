@@ -4,7 +4,7 @@ import { Pages } from "@constants/constants";
 
 export default {
   component: HamburgerNav,
-  title: "HamburgerNav",
+  title: "Design System/Menus/HamburgerNav",
   tags: ["autodocs"],
 };
 

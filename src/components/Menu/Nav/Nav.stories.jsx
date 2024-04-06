@@ -4,7 +4,7 @@ import { Pages } from "@constants/constants";
 
 export default {
   component: Nav,
-  title: "Nav",
+  title: "Design System/Menus/Nav",
   tags: ["autodocs"],
 };
 

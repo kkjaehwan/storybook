@@ -8,7 +8,7 @@ export default function Layout({ header,
     <html lang="en">
       <body className={styles.component}>
         <header className={styles.header}>
-          {header ? header : 'header area'}
+          {header ? header : <div style={{ textAlign: 'center', width: '100%' }}>header area</div>}
         </header>
         <main className={styles.main}>
           {children ? children : 'children area'}

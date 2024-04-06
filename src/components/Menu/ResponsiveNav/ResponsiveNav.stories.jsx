@@ -4,7 +4,7 @@ import ResponsiveNav from "./ResponsiveNav";
 
 export default {
   component: ResponsiveNav,
-  title: "ResponsiveNav",
+  title: "Design System/Menus/ResponsiveNav",
   tags: ["autodocs"],
 };
 

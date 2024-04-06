@@ -3,7 +3,7 @@ import Card from "./Card";
 
 export default {
   component: Card,
-  title: "Card",
+  title: "Design System/Cards/Card",
   tags: ["autodocs"],
 };
 

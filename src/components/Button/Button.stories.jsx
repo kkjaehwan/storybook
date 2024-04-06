@@ -5,7 +5,7 @@ import { faPlayCircle, faArrowAltCircleDown } from '@fortawesome/free-regular-sv
 
 export default {
   component: Button,
-  title: "Button",
+  title: "Design System/Buttons/Button",
   tags: ["autodocs"],
 };
 
