@@ -15,7 +15,7 @@ Default.args = {
   description: "Please click the button below if you would like to make a reservation."
   ,
   buttonProps: {
-    type: "line",
+    type: "3",
     size: "large",
     isDisabled: false,
     label: "Parking Lot Application Form.",
