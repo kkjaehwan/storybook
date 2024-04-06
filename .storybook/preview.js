@@ -19,6 +19,23 @@ const preview = {
         date: /Date$/,
       },
     },
+    backgrounds: {
+      default: "prefers-color-scheme",
+      values: [
+        {
+          name: "dark",
+          value: "var(--brand-black-100)",
+        },
+        {
+          name: "light",
+          value: "var(--brand-white-100)",
+        },
+        {
+          name: "prefers-color-scheme",
+          value: "var(--background-primary)",
+        },
+      ],
+    },
   },
 };
 
