@@ -12,9 +12,10 @@ const Template = (args) => <Card {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   image: "/images/vite.svg",
+  title: "Parking Permit Application Form",
   description: "Please click the button below if you would like to make a reservation."
   ,
-  buttonProps: {
+  buttonsProps: [{
     type: "3",
     size: "large",
     isDisabled: false,
@@ -22,5 +23,13 @@ Default.args = {
     iconLeft: null,
     iconRight: null,
     onClickTask: () => { alert('hi'); },
-  }
+  }, {
+    type: "3",
+    size: "large",
+    isDisabled: false,
+    label: "Parking Lot Application Form.",
+    iconLeft: null,
+    iconRight: null,
+    onClickTask: () => { alert('hi'); },
+  }]
 };

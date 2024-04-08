@@ -1,20 +1,33 @@
 import React from "react";
 import Button from "@components/Button/Button";
 import styles from './style.module.scss';
-import cardPropTypes from "./CardPropTypes";
+import CardPropTypes from "./CardPropTypes";
 
-const Card = ({ image, imgAlt, description, buttonProps }) => {
+const Card = ({ image, imgAlt, title, description, buttonsProps }) => {
   return (
     <article className={styles.card}>
-      {image && <img src={image} alt={imgAlt || "Image"} />}
-      <div className={styles.card_discription}>
-        {description}
+      <div className={styles.card_body}>
+        {image && <img src={image} alt={imgAlt || "Image"} />}
+        <div className={styles.card_content_body}>
+          {title && <div className={styles.card_title}>
+            {title}
+          </div>
+          }
+          {description && <div className={styles.card_discription}>
+            {description}
+          </div>
+          }</div>
       </div>
-      <Button {...buttonProps} />
+      <div className={styles.buttons_area}>
+        {buttonsProps?.map(buttonProps =>
+          <Button {...buttonProps} />
+        )}
+      </div>
+
     </article>
   );
 };
 
-Card.propTypes = cardPropTypes;
+Card.propTypes = CardPropTypes;
 
 export default Card;

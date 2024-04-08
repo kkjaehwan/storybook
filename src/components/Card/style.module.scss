@@ -1,10 +1,37 @@
+@import "src/styles/globalCss.module.scss";
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 2rem;
+
   background-color: var(--background-primary);
-  .card_discription {
-    text-align: center;
+  .card_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    .card_content_body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      .card_title {
+        font-size: var(--font-size-title3);
+        text-align: center;
+      }
+      .card_discription {
+        font-size: var(--font-size-body1);
+        text-align: center;
+      }
+    }
+  }
+  .buttons_area {
+    display: flex;
+    gap: 0.5rem;
+
+    @media screen and (max-width: #{$breakpoint_sm}) {
+      flex-direction: column;
+    }
   }
 }

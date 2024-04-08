@@ -1,0 +1,44 @@
+.imageCarousel {
+  display: flex;
+  flex-direction: column;
+  --containerHeight: 200px;
+  .carouselContainer {
+    max-width: 100%;
+    height: var(--containerHeight);
+    overflow-x: hidden;
+    .carouselTrack {
+      display: flex;
+      width: 100%;
+      /* 고정된 너비 */
+      transition: transform 0.5s ease-in-out;
+      .carouselSlide {
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: center;
+        width: 100%; /* 슬라이드가 부모 너비에 맞도록 설정 */
+        height: var(--containerHeight);
+      }
+      .carouselSlide img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto; /* 이미지의 가로세로 비율 유지 */
+        object-fit: cover;
+      }
+    }
+  }
+  .buttonContainer {
+    padding: 0.5rem;
+    font-size: var(--font-size-button3);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary-default);
+    background-color: var(--background-primary);
+
+    .carouselPrev,
+    .carouselNext {
+      cursor: pointer;
+    }
+  }
+}

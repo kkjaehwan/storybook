@@ -1,11 +1,12 @@
 import buttonPropTypes from "@components/Button/ButtonPropTypes";
 import PropTypes from "prop-types";
 
-const cardPropTypes = {
+const CardPropTypes = {
   image: PropTypes.string,
   imgAlt: PropTypes.string,
-  description: PropTypes.string.isRequired,
-  buttonProps: PropTypes.shape(buttonPropTypes).isRequired
+  title: PropTypes.string,
+  description: PropTypes.string,
+  buttonsProps: PropTypes.arrayOf(PropTypes.shape(buttonPropTypes)).isRequired
 };
 
-export default cardPropTypes;
+export default CardPropTypes;

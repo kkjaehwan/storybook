@@ -8,7 +8,7 @@ export default {
   tags: ["autodocs"],
 };
 
-const buttonPropsSample = {
+const buttonPropsSample = [{
   type: "3",
   size: "large",
   isDisabled: false,
@@ -16,13 +16,13 @@ const buttonPropsSample = {
   iconLeft: null,
   iconRight: null,
   onClickTask: () => { alert('hi'); }
-};
+}];
 
 const createCard = () => (
   <Card
     image="images/vite.svg"
     description="Please click the button below if you would like to make a reservation."
-    buttonProps={buttonPropsSample}
+    buttonsProps={buttonPropsSample}
   />
 );
 const Template = (args) => (
