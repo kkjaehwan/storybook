@@ -1,6 +1,7 @@
 import React from "react";
 import { Pages } from "@constants/constants";
 import ResponsiveNav from "./ResponsiveNav";
+import Logo from "@components/Logo/Logo";
 
 export default {
   component: ResponsiveNav,
@@ -14,6 +15,7 @@ export const Default = Template.bind({});
 
 
 Default.args = {
+  logo: <Logo logoText="<Logo/>" onClick={() => { alert() }} />,
   pages: Pages,
 };
 

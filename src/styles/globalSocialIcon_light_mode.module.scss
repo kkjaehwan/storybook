@@ -1,0 +1,9 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --social-icon-surface-default: var(--brand-blue-300);
+    --social-icon-surface-hover: var(--brand-blue-100);
+    --social-icon-surface-active: var(--brand-blue-200);
+    --social-icon-surface-disabled: var(--brand-blue-100);
+    --social-icon-surface-inverse: var(--brand-white-100);
+  }
+}

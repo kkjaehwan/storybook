@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 
 const responsiveNavPropTypes = {
+  logo: PropTypes.node,
   pages: PropTypes.arrayOf(
     PropTypes.shape({
       key: PropTypes.string.isRequired,

@@ -1,0 +1,13 @@
+:root {
+  --social-icon-size-small: 16px;
+  --social-icon-size-medium: 24px;
+  --social-icon-size-large: 32px;
+}
+
+@media (prefers-color-scheme: light) {
+  @import "globalSocialIcon_light_mode.module.scss";
+}
+
+@media (prefers-color-scheme: dark) {
+  @import "globalSocialIcon_dark_mode.module.scss";
+}

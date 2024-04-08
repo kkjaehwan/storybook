@@ -1,0 +1,12 @@
+.logo {
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-headline4);
+  transition: transform 300ms ease-in-out;
+  font-weight: bold;
+  &:hover {
+    transform: scale(1.02);
+  }
+}

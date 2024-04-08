@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 
 const hamburgerNavPropTypes = {
+  logo: PropTypes.node,
   pages: PropTypes.arrayOf(
     PropTypes.shape({
       key: PropTypes.string.isRequired,

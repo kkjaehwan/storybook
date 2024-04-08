@@ -1,5 +1,6 @@
 @import "src/styles/globalCss.module.scss";
 .responsiveNav {
+  width: 100%;
   .hamburgerNav {
     display: none;
   }
@@ -9,7 +10,8 @@
 
   @media screen and (max-width: #{$breakpoint_md}) {
     .hamburgerNav {
-      display: block;
+      display: flex;
+      justify-content: flex-end;
     }
     .horizontalNav {
       display: none;

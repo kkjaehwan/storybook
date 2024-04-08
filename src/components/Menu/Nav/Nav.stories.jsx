@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import { Pages } from "@constants/constants";
+import Logo from "@components/Logo/Logo";
 
 export default {
   component: Nav,
@@ -14,6 +15,7 @@ export const Default = Template.bind({});
 
 
 Default.args = {
+  logo: <Logo logoText="<Logo/>" onClick={() => { alert() }} />,
   pages: Pages,
 };
 

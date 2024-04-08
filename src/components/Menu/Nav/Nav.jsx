@@ -4,12 +4,15 @@ import navPropTypes from "./NavPropTypes";
 import Button from "@components/Button/Button";
 
 
-const Nav = ({
+const Nav = ({ logo,
   pages, type = 'horizontal', widthHorizontal = '200px', heightHorizontal = "50px", widthVertical = '100%', heightVertical = "50px", mainButtonType = "4", subButtonType = "5", activePageKeys }) => {
 
   return (
-    <nav >
-      <ul className={`${styles.nav} `} type={type}>
+    <nav className={styles.nav_area} type={type}>
+      <div className={styles.logo_area}>
+        {logo}
+      </div>
+      <ul className={`${styles.nav} `} >
         {pages.map((page, index) => {
 
           const [hoveredIndex, setHoveredIndex] = useState(null);

@@ -1,0 +1,21 @@
+@import "src/styles/globalCss.module.scss";
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media screen and (max-width: #{$breakpoint_md}) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .copyright {
+    text-align: center;
+  }
+}
