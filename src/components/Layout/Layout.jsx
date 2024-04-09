@@ -3,10 +3,10 @@ import styles from './style.module.scss';
 import layoutPropTypes from "./LayoutPropTypes";
 
 export default function Layout({ header,
-  children, footer }) {
+  children, footer, backgroundImage = "" }) {
   return (
-    <html lang="en">
-      <body className={styles.component}>
+    <html lang="en" className={styles.html}  >
+      <body className={styles.body} style={{ "--background-image": `url(${backgroundImage})` }}>
         <header className={styles.header}>
           {header ? header : <div style={{ textAlign: 'center', width: '100%' }}>header area</div>}
         </header>
@@ -17,7 +17,7 @@ export default function Layout({ header,
           {footer ? footer : 'footer area'}
         </footer>
       </body>
-    </html>
+    </html >
   );
 }
 Layout.propTypes = layoutPropTypes;

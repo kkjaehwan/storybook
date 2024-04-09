@@ -14,7 +14,7 @@
     z-index: 999;
 
     > * {
-      background-color: var(--background-primary);
+      background-color: var(--background-inverse);
     }
 
     .button_area {
@@ -26,6 +26,7 @@
       align-items: center;
     }
     .menu_area {
+      background-color: var(--background-inverse);
       padding: 0;
       overflow-y: scroll;
     }

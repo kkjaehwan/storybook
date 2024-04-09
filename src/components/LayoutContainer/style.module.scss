@@ -1,0 +1,8 @@
+@import "src/styles/globalCss.module.scss";
+.layoutContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

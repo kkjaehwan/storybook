@@ -3,9 +3,9 @@ import Button from "@components/Button/Button";
 import styles from './style.module.scss';
 import CardPropTypes from "./CardPropTypes";
 
-const Card = ({ image, imgAlt, title, description, buttonsProps }) => {
+const Card = ({ image, imgAlt, title, description, buttonsProps, type = 'default', backgroundType = 'white' }) => {
   return (
-    <article className={styles.card}>
+    <article className={styles.card} type={type} backgroundType={backgroundType}>
       <div className={styles.card_body}>
         {image && <img src={image} alt={imgAlt || "Image"} />}
         <div className={styles.card_content_body}>

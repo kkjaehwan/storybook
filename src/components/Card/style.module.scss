@@ -6,6 +6,12 @@
   gap: 2rem;
 
   background-color: var(--background-primary);
+  &[backgroundType="transparent"] {
+    background-color: transparent;
+  }
+  &[type="inverse"] {
+    color: var(--text-primary-inverse);
+  }
   .card_body {
     display: flex;
     flex-direction: column;
@@ -28,7 +34,9 @@
   }
   .buttons_area {
     display: flex;
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
 
     @media screen and (max-width: #{$breakpoint_sm}) {
       flex-direction: column;

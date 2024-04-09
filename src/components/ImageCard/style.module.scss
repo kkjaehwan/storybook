@@ -1,0 +1,40 @@
+@import "src/styles/globalCss.module.scss";
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  &[type="white"] {
+    background-color: white;
+  }
+  .images {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .image_area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .image_title {
+        font-size: var(--font-size-body1);
+        font-weight: bold;
+      }
+    }
+  }
+  .card_content_body {
+    .card_discription {
+      text-align: center;
+    }
+  }
+}

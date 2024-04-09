@@ -17,11 +17,12 @@ export const Default = Template.bind({});
 Default.args = {
   logo: <Logo logoText="<Logo/>" onClick={() => { alert() }} />,
   pages: Pages,
+  mainButtonType: "1", subButtonType: "2"
 };
 
 
 export const Selected = Template.bind({});
 Selected.args = {
   ...Default.args,
-  activePageKeys: ['ministry_training', 'ddc_training']
+  activePageKeys: ['play_your_visit', 'getting_here']
 };

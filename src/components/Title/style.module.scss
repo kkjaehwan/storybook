@@ -1,0 +1,31 @@
+@import "src/styles/globalCss.module.scss";
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  --bar-color: var(--text-primary-default);
+  --title-color: var(--text-primary-default);
+
+  .bar_area {
+    width: 50px;
+    height: 4px;
+    background-color: var(--bar-color);
+  }
+
+  .title_area {
+    font-size: var(--font-size-title5);
+    color: var(--title-color);
+    font-weight: bold;
+  }
+
+  &[type="inverse"] {
+    --bar-color: var(--text-primary-inverse);
+    --title-color: var(--text-primary-inverse);
+  }
+  @media screen and (max-width: #{$breakpoint_md}) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,12 +1,13 @@
 :root {
   --background-primary: var(--brand-white-100);
   --background-secondary: var(--brand-gray-500);
+  --background-inverse: var(--brand-black-100);
 
   --text-primary-default: var(--brand-black-100);
   --text-primary-hover: var(--brand-blue-300);
   --text-primary-active: var(--brand-blue-100);
   --text-primary-disabled: var(--brand-gray-500);
-  --text-primary-inverse: var(--brand-gray-500);
+  --text-primary-inverse: var(--brand-white-100);
 
   --text-secondary-default: var(--brand-white-100);
   --text-secondary-hover: var(--brand-white-100);

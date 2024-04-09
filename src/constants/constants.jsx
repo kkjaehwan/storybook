@@ -1,65 +1,68 @@
 export const Pages = [
   {
-    key: 'main',
-    name: 'Main',
-    path: '/',
-    sub: [],
-  },
-  {
-    key: 'church_intro',
-    name: 'Church Introduction',
-    path: '/church-introduction',
+    key: 'play_your_visit',
+    name: 'Play your visit',
+    path: '/play-your-visit',
     sub: [
       {
-        key: 'church_intro_individual_ministry',
-        name: 'Individual Ministry',
-        path: '/individual-ministry',
+        key: 'ticket_and_hours',
+        name: 'Ticket and hours',
+        path: '/play-your-visit/ticket-and-hours',
       },
       {
-        key: 'church_intro_ddc_training',
-        name: 'DDC Training',
-        path: '/ddc-training',
+        key: 'dining_at_cn_tower',
+        name: 'Dining at the CN Tower',
+        path: '/play-your-visit/dining-at-cn-tower',
       },
       {
-        key: 'church_intro_application_form',
-        name: 'Application Form',
-        path: '/application-form',
+        key: 'getting_here',
+        name: 'Getting here',
+        path: '/play-your-visit/getting-here',
       },
     ],
   },
   {
-    key: 'ministry_training',
-    name: 'Ministry Training',
-    path: '/ministry-training',
+    key: 'play_an_event',
+    name: 'Play an event',
+    path: '/play-an-event',
     sub: [
       {
-        key: 'individual_ministry',
-        name: 'Individual Ministry',
-        path: '/individual-ministry',
+        key: 'overview',
+        name: 'Overview',
+        path: '/play-an-event/overview',
       },
       {
-        key: 'ddc_training',
-        name: 'DDC Training',
-        path: '/ddc-training',
+        key: 'our_spaces',
+        name: 'Our spaces',
+        path: '/play-an-event/our-spaces',
       },
       {
-        key: 'application_form',
-        name: 'Application Form',
-        path: '/application-form',
+        key: 'event_inquiries',
+        name: 'Event inquiries',
+        path: '/play-an-event/event-inquiries',
       },
     ],
   },
-  // {
-  //   key: 'bulletin_sermon',
-  //   name: 'Bulletin/Sermon',
-  //   path: '/bulletin-sermon',
-  //   sub: [
-  //   ],
-  // },
-  // {
-  //   key: 'online_donation',
-  //   name: 'Online Donation',
-  //   path: '/online-donation',
-  //   sub: [],
-  // },
+  {
+    key: 'dine_at_360_restaurant',
+    name: 'Dine at 360 Restaurant',
+    path: '/dine-at-360-restaurant',
+    sub: [
+      {
+        key: 'overview',
+        name: 'Overview',
+        path: '/dine-at-360-restaurant/overview',
+      },
+      {
+        key: 'menu',
+        name: 'Menu',
+        path: '/dine-at-360-restaurant/menu',
+      },
+      {
+        key: 'our_recipes',
+        name: 'Our recipes',
+        path: '/dine-at-360-restaurant/our-recipes',
+      },
+    ],
+  },
 ];

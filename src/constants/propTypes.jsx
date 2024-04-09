@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 export const ImageProps = {
   src: PropTypes.string,
-  alt: PropTypes.string
+  alt: PropTypes.string,
+  title: PropTypes.string
 }
 export const PageProps = {
   key: PropTypes.string.isRequired,
