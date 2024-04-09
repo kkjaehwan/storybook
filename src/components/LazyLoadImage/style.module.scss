@@ -2,6 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+  }
   .spinner {
     animation: spin 1s linear infinite; /* 회전 애니메이션 적용 */
   }

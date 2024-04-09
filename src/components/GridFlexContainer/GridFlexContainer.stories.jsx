@@ -8,6 +8,10 @@ export default {
   tags: ["autodocs"],
 };
 
+export const Default = Template.bind({});
+
+Default.args = { title: 'GridFlexContainer' };
+
 const buttonPropsSample = [{
   type: "3",
   size: "large",
@@ -18,22 +22,17 @@ const buttonPropsSample = [{
   onClickTask: () => { alert('hi'); }
 }];
 
-const createCard = () => (
-  <Card
-    image="images/vite.svg"
-    description="Please click the button below if you would like to make a reservation."
-    buttonsProps={buttonPropsSample}
-  />
-);
+
 const Template = (args) => (
   <GridFlexContainer {...args}>
     {Array.from({ length: 5 }, (_, index) => (
       <React.Fragment key={index}>
-        {createCard()}
+        <Card
+          image="images/vite.svg"
+          description="Please click the button below if you would like to make a reservation."
+          buttonsProps={buttonPropsSample}
+        />
       </React.Fragment>
     ))}
   </GridFlexContainer>
 );
-
-export const Default = Template.bind({});
-Default.args = {};

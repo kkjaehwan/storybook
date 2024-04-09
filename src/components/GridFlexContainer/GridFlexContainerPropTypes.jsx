@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 
 const gridFlexContainerPropTypes = {
+  title: PropTypes.string,
+  type: PropTypes.oneOf(['default', 'inverse']),
   children: PropTypes.node.isRequired,
   containerType: PropTypes.oneOf(['grid', 'flex']),
   borderType: PropTypes.oneOf(['inner', 'full']),

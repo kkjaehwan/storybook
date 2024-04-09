@@ -5,8 +5,9 @@ import ImageCarouselPropTypes from './ImageCarouselPropTypes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight, faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import ImageToggleButton from '@components/ImageToggleButton/ImageToggleButton';
+import Title from '@components/Title/Title';
 
-const ImageCarousel = ({ images, containerWidth = '500px' }) => {
+const ImageCarousel = ({ title = "Scenery", images, containerHeight = '500px', type = "default" }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlay, setIsPlay] = useState(true);
   const trackRef = useRef(null);
@@ -108,37 +109,41 @@ const ImageCarousel = ({ images, containerWidth = '500px' }) => {
     setIsPlay(!isPlay);
   }, [isPlay]);
   return (
-    <div className={styles.imageCarousel} style={{
-      "--containerHeight": containerWidth
-    }}>
-      <div className={styles.carouselContainer}
-        onDragStart={onDragStart}
-        onDragOver={onDragOver}
-        onDragEnd={onDragEnd}
-        onMouseDown={onDragStart}
-        onMouseMove={onDragOver}
-        onMouseUp={onDragEnd}
-        onTouchStart={onTouchStart}
-        onTouchMove={onTouchMove}
-        onTouchEnd={onTouchEnd}>
-        <div className={styles.carouselTrack} ref={trackRef}>
-          {images.map((image, index) => (
-            <div className={styles.carouselSlide} key={index}>
-              <LazyLoadImage image={image} />
-            </div>
-          ))}
+    <div className={styles.imageCarouselComponent}>
+      {title && <Title title={title} type={type} />}
+      <div className={styles.imageCarousel} type={type} style={{
+        "--containerHeight": containerHeight
+      }}>
+        <div className={styles.carouselContainer}
+          onDragStart={onDragStart}
+          onDragOver={onDragOver}
+          onDragEnd={onDragEnd}
+          onMouseDown={onDragStart}
+          onMouseMove={onDragOver}
+          onMouseUp={onDragEnd}
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}>
+          <div className={styles.carouselTrack} ref={trackRef}>
+            {images.map((image, index) => (
+              <div className={styles.carouselSlide} key={index}>
+                <LazyLoadImage image={image} />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className={styles.buttonContainer}>
+        <div className={styles.buttonContainer}>
 
-        <FontAwesomeIcon className={styles.carouselPrev} icon={faChevronLeft} id="prevBtn" onClick={prevSlide} />
-        <div className={styles.sliderCount}>
-          {currentIndex + 1}/{images.length}
+          <FontAwesomeIcon className={styles.carouselPrev} icon={faChevronLeft} id="prevBtn" onClick={prevSlide} />
+          <div className={styles.sliderCount}>
+            {currentIndex + 1}/{images.length}
+          </div>
+          <FontAwesomeIcon className={styles.carouselNext} icon={faChevronRight} id="nextBtn" onClick={nextSlide} />
+          <ImageToggleButton beforeImage={<FontAwesomeIcon icon={faPlay} />} afterImage={<FontAwesomeIcon icon={faPause} />} onClick={togglePlayButton} />
         </div>
-        <FontAwesomeIcon className={styles.carouselNext} icon={faChevronRight} id="nextBtn" onClick={nextSlide} />
-        <ImageToggleButton beforeImage={<FontAwesomeIcon icon={faPlay} />} afterImage={<FontAwesomeIcon icon={faPause} />} onClick={togglePlayButton} />
-      </div>
-    </div >
+      </div >
+    </div>
+
   );
 };
 
