@@ -25,7 +25,7 @@ export const Example = Template.bind({});
 Example.args = {
   ...Default.args,
   header: <>
-    <ResponsiveNav logo={<Logo logoText="<Logo/>" onClick={() => { alert() }} type='inverse' />} pages={Pages} />
+    <ResponsiveNav logo={<Logo logoText="<CNTower/>" onClick={() => { alert() }} type='inverse' />} pages={Pages} />
   </>,
   children: <><Card
     title="CN Tower"
@@ -47,17 +47,15 @@ Example.args = {
       iconRight: null,
       onClickTask: () => { alert('hi'); },
     }]}
-    type='inverse' backgroundType='transparent'
+    type='inverse'
   />
     <ImageCard images={[{ src: "/images/CNTower.jpg", alt: 'CN Tower', title: 'CN Tower' }, { src: "/images/Totonto.jpg", alt: 'Totonto', title: 'Totonto' }]}
       title="CN Tower Introduction"
       description="The CN Tower, located in downtown Toronto, is an iconic landmark that attracts millions of visitors each year. Its observation decks offer breathtaking views of the city and Lake Ontario. Whether you're a tourist or a local, a visit to the CN Tower is a must-do experience."
     />
-    <div style={{ width: "100%" }}>
-      <GoogleMap />
-    </div>
+    <GoogleMap />
   </>,
-  footer: <Footer logo={<Logo logoText="<Logo/>" onClick={() => { alert() }} />}
+  footer: <Footer logo={<Logo logoText="<CNTower/>" onClick={() => { alert() }} />}
     socialLinks={[
       {
         title: 'abc',
@@ -85,5 +83,5 @@ Example.args = {
       }
     ]}
     copyright={'© Powered by Jaehwan Kim.'} />,
-  backgroundImage: 'public/images/toronto_background.jpg'
+  backgroundImage: 'images/toronto_background.jpg'
 };

@@ -8,7 +8,6 @@ const CardPropTypes = {
   description: PropTypes.string,
   buttonsProps: PropTypes.arrayOf(PropTypes.shape(buttonPropTypes)).isRequired,
   type: PropTypes.oneOf(['default', 'inverse']),
-  backgroundType: PropTypes.oneOf(['white', 'transparent'])
 };
 
 export default CardPropTypes;

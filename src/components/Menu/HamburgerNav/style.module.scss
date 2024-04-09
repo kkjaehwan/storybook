@@ -18,9 +18,9 @@
     }
 
     .button_area {
-      padding: 16px;
+      padding: 16px 0;
       display: grid;
-      grid-template-columns: 40px auto 40px;
+      grid-template-columns: auto auto auto;
 
       justify-content: space-between;
       align-items: center;

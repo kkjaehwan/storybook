@@ -34,7 +34,7 @@ const HamburgerNav = ({ logo,
   return (
     <div className={styles.hamburgerNav} >
       <div className={styles.button_area}>
-        <Button onClickTask={toggleMenu} iconLeft={<FontAwesomeIcon icon={faBars} />} label="" type="3" />
+        <Button onClickTask={toggleMenu} iconLeft={<FontAwesomeIcon icon={faBars} />} label="" type={mainButtonType} />
       </div>
       {isOpen && (
         <div className={styles.background}>
@@ -42,7 +42,7 @@ const HamburgerNav = ({ logo,
             <div className={styles.button_area}>
               <div></div>
               {logo ? logo : <div></div>}
-              <Button onClickTask={toggleMenu} iconLeft={<FontAwesomeIcon icon={faXmark} />} label="" type="3" />
+              <Button onClickTask={toggleMenu} iconLeft={<FontAwesomeIcon icon={faXmark} />} label="" type={mainButtonType} />
             </div>
             <div className={styles.menu_area}>
               <Nav pages={pages} type={type} widthHorizontal={widthHorizontal} heightHorizontal={heightHorizontal} widthVertical={widthVertical} heightVertical={heightVertical} mainButtonType={mainButtonType} subButtonType={subButtonType} activePageKeys={activePageKeys} />

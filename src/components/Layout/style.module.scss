@@ -21,6 +21,7 @@
       width: 100%;
       max-width: inherit;
       max-width: 1280px;
+
       // box-shadow: inset 0px 0px 1px 0px black;
       // border: 1px solid black;
     }
@@ -34,19 +35,29 @@
       justify-content: center;
       align-items: center;
       > * {
-        padding: 3rem 0;
+        padding: 3rem 1.5rem;
+      }
+      > *:not(:first-child):nth-child(even) {
+        background-color: var(--background-secondary);
+      }
+      > *:not(:first-child):nth-child(odd) {
+        background-color: var(--background-tertiary);
       }
     }
 
     .footer {
+      padding: 1.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: var(--background-secondary);
     }
 
     @media screen and (max-width: #{$breakpoint_md}) {
       .main {
-        padding: 40px 0;
+        > * {
+          padding: 3rem 0;
+        }
       }
     }
   }
