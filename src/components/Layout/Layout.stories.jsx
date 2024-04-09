@@ -49,7 +49,7 @@ Example.args = {
     }]}
     type='inverse'
   />
-    <ImageCard images={[{ src: "/images/CNTower.jpg", alt: 'CN Tower', title: 'CN Tower' }, { src: "/images/Totonto.jpg", alt: 'Totonto', title: 'Totonto' }]}
+    <ImageCard images={[{ src: "../../public/images/CNTower.jpg", alt: 'CN Tower', title: 'CN Tower' }, { src: "/images/Totonto.jpg", alt: 'Totonto', title: 'Totonto' }]}
       title="CN Tower Introduction"
       description="The CN Tower, located in downtown Toronto, is an iconic landmark that attracts millions of visitors each year. Its observation decks offer breathtaking views of the city and Lake Ontario. Whether you're a tourist or a local, a visit to the CN Tower is a must-do experience."
     />
